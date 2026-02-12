@@ -21,7 +21,7 @@ const handleSubmit = (e)=>{
         password
     };
 
-    axios.post('http://localhost:8080/users',payload)
+    axios.post('http://signup-env.eba-zziypauj.ap-south-1.elasticbeanstalk.com/users',payload)
     .then(response => {
         console.log(response.data);
         navigate("/users");

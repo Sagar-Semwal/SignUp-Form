@@ -7,7 +7,7 @@ function Users(){
 
     //Will run only one time when reload
     useEffect(()=>{
-        axios.get("http://localhost:8080/users")
+        axios.get("http://signup-env.eba-zziypauj.ap-south-1.elasticbeanstalk.com/users")
         .then(response => {
             console.log(response);
             setUsers(response.data);
